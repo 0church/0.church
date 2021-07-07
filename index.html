@@ -8,23 +8,35 @@
     <link rel="stylesheet" type="text/css" href="css/index.css" id="pagesheet"/>
 <link rel="shortcut icon" href="media/favicon.ico"/>
 <style>
-	body{
-    		background-color: #30006E;
-	}
+	
 </style>
-  <title>Church of the Humankind</title>
+<title>Church of the Humankind</title>
 </head>
 <body>
-<div class="clearfix" id="page"><!-- column -->
+<div class="clearfix" id="page">
     <div class="svg colelem">
-        <img class="svg colelem" id="1" src="media/logo.svg"
-             alt="" data-mu-svgfallback="images/logo_poster_.png"/><!-- svg -->
+        
+		<div>
+            <canvas class="svg colelem" id="canvas" width="500" height="500"></canvas>
+        </div>
+
+        <script src="dist/rive.min.js"></script>
+
+		<script>
+			new rive.Rive({
+				src: 'media/logo.riv',
+				canvas: document.getElementById('canvas'),
+				animations: ['idle', 'curves'],
+				autoplay: true
+			});
+		</script>
+
         <div id="linksContainer">
-		<a class="nonblock nontext clearfix grpelem" id="2" href="https://t.me/church0"><!-- content --><img class="social-icon" src="media/icon_tg.svg" alt="RU"></a>
-		<a class="nonblock nontext clearfix grpelem" id="3" href="https://facebook.com/groups/church0"><!-- content --><img class="social-icon" src="media/icon_fb.svg" alt="RU"></a>
-		<a class="nonblock nontext clearfix grpelem" id="3" href="https://instagram.com/zero.church"><!-- content --><img class="social-icon" src="media/icon_ig.svg" alt="RU"></a>
-		<a class="nonblock nontext clearfix grpelem" id="3" href="https://twitter.com/zerochurch"><!-- content --><img class="social-icon" src="media/icon_tw.svg" alt="RU"></a>
-		<a class="nonblock nontext clearfix grpelem" id="3" href="https://tiktok.com/@zero.church"><!-- content --><img class="social-icon" src="media/icon_tt.svg" alt="RU"></a>
+		<a class="nonblock nontext clearfix grpelem soc-ico" id="2" href="https://t.me/church0"><img class="social-icon" src="media/icon_tg.svg" alt="Telegram"></a>
+		<a class="nonblock nontext clearfix grpelem soc-ico" id="3" href="https://facebook.com/groups/church0"><img class="social-icon" src="media/icon_fb.svg" alt="Facebook"></a>
+		<a class="nonblock nontext clearfix grpelem soc-ico" id="4" href="https://instagram.com/zero.church"><img class="social-icon" src="media/icon_ig.svg" alt="Instagram"></a>
+		<a class="nonblock nontext clearfix grpelem soc-ico" id="5" href="https://twitter.com/zerochurch"><img class="social-icon" src="media/icon_tw.svg" alt="Twitter"></a>
+		<a class="nonblock nontext clearfix grpelem soc-ico" id="6" href="https://tiktok.com/@zero.church"><img class="social-icon" src="media/icon_tt.svg" alt="TikTok"></a>
         </div>
     </div>
 </div>

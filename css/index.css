@@ -1,6 +1,21 @@
+.soc-ico {
+  transition: background-color 200ms,box-shadow 200ms ease-out,bottom 200ms ease-out;
+    position: fixed;
+    border-radius: 100%;
+    line-height: 0;
+    background-color: transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.soc-ico:hover {
+  background-color: #260056;
+}
+
 body{
 	margin: 0;
 	padding: 0;
+	background-color: #30006E;
 }
 .html
 {
@@ -48,12 +63,13 @@ body{
 	/*z-index: 3;*/
 }
 #linksContainer{
-	padding: 0 5px;
+	padding: 5px;
 	/*dіsplay: flex;*/
 	/*justify-content: space-around;*/
 }
 .social-icon {
 	width: 5vh;
+  height: 6vh;
 }
 /*#u91-4{*/
 /*color: #8134AF;*/
